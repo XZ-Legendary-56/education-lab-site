@@ -1,0 +1,193 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="Assets/CSS/main.css">
+</head>
+<body class="text-lg bg-[#eaeff7] flex flex-col min-h-screen font-mono">
+    <header class="w-full p-4 bg-white text-xl relative z-[3]">
+        <div class="container mx-auto flex items-center justify-between">
+            <a href="index.html" class="flex items-center gap-2 transition-all duration-500 hover:rotate-6 hover:scale-110">
+                <!-- Контейнер логотипа -->
+                <div class="w-8 h-8 bg-[#1E90FF] rounded-[8px] flex items-center justify-center">
+                    <!-- Лупа -->
+                    <div class="w-[20px] h-[20px] border-3 border-[#87CEEB] rounded-full relative 
+                                before:content-[''] before:w-[15px] before:h-[15px] before:bg-white before:rounded-full 
+                                before:absolute before:top-1/2 before:left-1/2 before:-translate-x-1/2 before:-translate-y-1/2 
+                                after:content-[''] after:w-[10px] after:h-[3px] after:bg-black after:absolute 
+                                after:-bottom-1.5 after:-right-1.5 after:rotate-45">
+                    </div>
+                </div>
+                <!-- Текст -->
+                <span class="text-lg font-bold">
+                    Education<span class="text-[#1E90FF]">Lab</span>
+                </span>
+            </a>
+            <div id="menu" class="flex items-center gap-6 max-md:flex-col max-md:w-full max-md:py-6 max-md:px-4 max-md:absolute max-md:bg-white max-md:top-0 max-md:left-0 max-md:border-t-2 border-[#4b79f6] transition-all duration-500 max-md:-translate-y-full">
+                <a href="index.html" class="flex flex-col after:w-0 after:h-[2px] after:rounded-full after:bg-[#4b79f6] after:transition-all after:duration-500 hover:after:w-full">Главная</a>
+                <a href="Pages/tasks.html" class="flex flex-col after:w-0 after:h-[2px] after:rounded-full after:bg-[#4b79f6] after:transition-all after:duration-500 hover:after:w-full">Задания</a>
+                <a href="Pages/program.html" class="flex flex-col after:w-0 after:h-[2px] after:rounded-full after:bg-[#4b79f6] after:transition-all after:duration-500 hover:after:w-full">Программа обучения</a>
+            </div>
+            <button id="toggler" class="md:hidden cursor-pointer">
+                <svg class="w-6 h-6" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <g id="SVGRepo_bgCarrier" stroke-width="0"></g>
+                    <g id="SVGRepo_tracerCarrier" stroke-linecap="round" stroke-linejoin="round"></g>
+                    <g id="SVGRepo_iconCarrier">
+                        <path d="M4 6H20M4 12H14M4 18H9" stroke="#4b79f6" stroke-width="2" stroke-linecap="round"
+                            stroke-linejoin="round"></path>
+                    </g>
+                </svg>
+            </button>
+        </div>
+    </header>
+    <div id="overlay" class="inset-0 fixed bg-black/30 top-0 z-[2] hidden md:hidden"></div>
+
+    <main class="w-full">
+        <div class="w-full bg-[#eaeff7] py-20 px-4">
+            <div class="container mx-auto flex max-lg:flex-col lg:items-center gap-8 w-full">
+                <div class="flex flex-col gap-4 w-full lg:w-3/5">
+                    <p class="text-3xl font-medium">Кто такой тестировщик</p>
+                    <p><span class="font-medium">Тестировщик</span> находят ошибки в работе сайтов и приложений и прогнозируют сбои, чтобы повысить качество продукта. Такие специалисты нужны при запуске любого ПО.</p>
+                    <p>Тестирование — отличный вариант для старта в IT. Специалисту не нужно программировать, разбираться в математике или иметь техническое образование.</p>
+                    <p>Кроме того, профессия тестировщика открывает возможности для дальнейшего роста в IT: вы можете углубиться в автоматизацию тестирования, изучить языки программирования или перейти в смежные области, такие как DevOps или аналитика. Это делает тестирование не только стартовой точкой, но и перспективным направлением для долгосрочного развития в технологической сфере.</p>
+                </div>
+                <div class="flex flex-col gap-4 w-full lg:w-2/5 font-medium">
+                    <img src="Assets/Images/main/hero.jpg" alt="" class="rounded-xl aspect-[11/5] object-cover">
+                    <p>Тестировщики ПО востребованы в разных сферах:</p>
+                    <div class="flex items-center gap-2 flex-wrap text-white text-base">
+                        <p class="px-4 py-1.5 rounded-full bg-[#1F1F1F]">Веб-разработка</p>
+                        <p class="px-4 py-1.5 rounded-full bg-[#1F1F1F]">VR-разработка</p>
+                        <p class="px-4 py-1.5 rounded-full bg-[#1F1F1F]">Информационная безопасность</p>
+                        <p class="px-4 py-1.5 rounded-full bg-[#1F1F1F]">Банкинг</p>
+                        <p class="px-4 py-1.5 rounded-full bg-[#1F1F1F]">Разработка компьютерных игр</p>
+                        <p class="px-4 py-1.5 rounded-full bg-[#1F1F1F]">Мобильная разработка</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="w-full bg-[#1F1F1F] py-20 px-4 text-white">
+            <div class="container mx-auto flex flex-col gap-8 w-full">
+                <p class="text-3xl font-medium">Кому подойдёт этот курс</p>
+                <div class="grid grid-cols-1 lg:grid-cols-3 gap-4 w-full">
+                    <div class="flex flex-col gap-4 p-4 rounded-xl bg-black/70">
+                        <img src="Assets/Images/main/people1.png" alt="" class="rounded-xl aspect-square object-cover object-top w-full">
+                        <p class="font-medium">Тем, кто хочет сменить профессию и работать в IT без программирования</p>
+                        <div class="w-full h-px bg-white/15"></div>
+                        <p class="text-base">Освоите профессию тестировщика с нуля. Научитесь тестировать веб- и мобильные приложения и отработаете полученные навыки на стажировке в IT-компании.</p>
+                    </div>
+                    <div class="flex flex-col gap-4 p-4 rounded-xl bg-black/70">
+                        <img src="Assets/Images/main/people2.png" alt="" class="rounded-xl aspect-square object-cover object-top w-full">
+                        <p class="font-medium">Начинающим тестировщикам/тем, кто изучает тестирование самостоятельно</p>
+                        <div class="w-full h-px bg-white/15"></div>
+                        <p class="text-base">Повысите уровень своих компетенций в тестировании и структурируете знания. Будете чувствовать себя увереннее в профессии и повысите свой доход.</p>
+                    </div>
+                    <div class="flex flex-col gap-4 p-4 rounded-xl bg-black/70">
+                        <img src="Assets/Images/main/people3.png" alt="" class="rounded-xl aspect-square object-cover object-top w-full">
+                        <p class="font-medium">Смежным специалистам в сфере IT</p>
+                        <div class="w-full h-px bg-white/15"></div>
+                        <p class="text-base">Сможете говорить с разработчиками на одном языке, применять навыки тестирования в текущей профессии или полностью сменить направление.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="w-full bg-white py-20 px-4">
+            <div class="container mx-auto w-full px-10 flex max-lg:flex-col lg:items-center gap-8 bg-[#eaeff7] rounded-xl">
+                <div class="flex flex-col gap-6 w-full lg:w-[70%] py-16">
+                    <p class="text-3xl tracking-wide font-medium">Если вы предпочитаете другие виды тестирования,</p>
+                    <p>предлагаем пройти курс «Инженер по тестированию», который откроет перед вами новые карьерные возможности. В рамках обучения вы освоите запуск автотестов, изучите основы Python и DevOps, а также познакомитесь с современными инструментами и методиками тестирования. Полученные знания и навыки позволят вам уверенно претендовать на позиции с более высоким уровнем дохода и станут solidной базой для дальнейшего профессионального роста в IT-сфере.</p>
+                    <button class="px-4 py-1.5 text-white transition-all duration-500 bg-[#4B79F6] hover:opacity-80 w-fit rounded-xl">Узнать подробнее</button>
+                </div>
+                <img src="Assets/Images/main/devops.png" alt="" class="w-full lg:w-30% object-cover rounded-xl object-top aspect-square self-end">
+            </div>
+        </div>
+        <div class="w-full bg-[#1F1F1F] py-20 px-4 text-white">
+            <div class="container mx-auto flex flex-col gap-8 w-full">
+                <p class="text-3xl font-medium">Преимущества</p>
+                <div class="grid grid-cols-1 md:grid-cols-3 gap-4 w-full">
+                    <div class="flex flex-col gap-4 p-4 rounded-xl bg-black/70">
+                        <p class="font-medium">Быстрый старт в IT</p>
+                        <div class="w-full h-px bg-white/15"></div>
+                        <p class="text-base">Тестирование не требует глубоких технических знаний или навыков программирования, что позволяет начать карьеру даже без опыта в IT. Короткий срок обучения и высокий спрос на специалистов делают эту профессию доступной для новичков.</p>
+                    </div>
+                    <div class="flex flex-col gap-4 p-4 rounded-xl bg-black/70">
+                        <p class="font-medium">Востребованность на рынке труда</p>
+                        <div class="w-full h-px bg-white/15"></div>
+                        <p class="text-base">Тестировщики нужны в каждой компании, которая разрабатывает программное обеспечение. Это гарантирует стабильный спрос на специалистов, а также возможность работать в различных отраслях — от fintech до игровой индустрии.</p>
+                    </div>
+                    <div class="flex flex-col gap-4 p-4 rounded-xl bg-black/70">
+                        <p class="font-medium">Возможности для профессионального роста</p>
+                        <div class="w-full h-px bg-white/15"></div>
+                        <p class="text-base">Профессия тестировщика открывает путь к более сложным и высокооплачиваемым направлениям, таким как автоматизация тестирования, DevOps или управление качеством (QA Lead). Это позволяет строить долгосрочную карьеру в IT.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="w-full bg-white py-20 px-4">
+            <div class="container mx-auto flex max-lg:flex-col gap-8 w-full">
+                <div class="flex flex-col gap-6 w-full lg:w-[65%] justify-between">
+                    <p class="text-3xl font-medium"><span class="text-[#4B79F6]">100 000 рублей</span> — средняя зарплата тестировщика в 2024 году</p>
+                    <div class="flex max-md:flex-col md:items-end gap-4 lg:gap-10 w-full">
+                        <div class="flex flex-col gap-4 w-full md:w-1/3">
+                            <p class="text-[#4B79F6] text-2xl">60 000+ ₽</p>
+                            <p class="text-white bg-[#4B79F6] rounded-xl text-center max-md:w-[21.25%] max-md:py-1.5 md:pb-4 md:pt-20">Junior</p>
+                        </div>
+                        <div class="flex flex-col gap-4 w-full md:w-1/3">
+                            <p class="text-[#4B79F6] text-2xl">120 000+ ₽</p>
+                            <p class="text-white bg-[#4B79F6] rounded-xl text-center max-md:w-[62.5%] max-md:py-1.5 md:pb-4 md:pt-40">Middle</p>
+                        </div>
+                        <div class="flex flex-col gap-4 w-full md:w-1/3">
+                            <p class="text-[#4B79F6] text-2xl">190 000+ ₽</p>
+                            <p class="text-white bg-[#4B79F6] rounded-xl text-center max-md:w-full max-md:py-1.5 md:pb-4 md:pt-64">Senior</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="flex flex-col gap-6 w-full lg:w-[35%]">
+                    <p class="text-xl">Вакансии на hh.ru прямо сейчас</p>
+                    <div class="flex flex-col gap-4 p-6 bg-[#eaeff7] rounded-xl">
+                        <p class="font-medium text-[#4B79F6]">Тестировщик</p>
+                        <p class="text-2xl font-medium">65 000 – 75 000 ₽</p>
+                        <p class="text-base">Москва</p>
+                        <p class="text-lg">Проведение ручного тестирования, анализ требований, разработка тестовых сценариев и документирование результатов. Базовые знания тестирования и внимательность к деталям.</p>
+                    </div>
+                    <div class="flex flex-col gap-4 p-6 bg-[#eaeff7] rounded-xl">
+                        <p class="font-medium text-[#4B79F6]">Ручной тестировщик WEB-приложений</p>
+                        <p class="text-2xl font-medium">65 000 – 120 000 ₽</p>
+                        <p class="text-base">Москва</p>
+                        <p class="text-lg">Функциональное, регрессионное и кросс-браузерное тестирование WEB-приложений, выявление багов и работа с тестовой документацией. Опыт работы с Jira, TestRail приветствуется.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="w-full bg-[#eaeff7] py-20 px-4">
+            <div class="container mx-auto w-full px-10 py-16 flex max-lg:flex-col lg:items-center gap-6 bg-[#1F1F1F] text-white rounded-xl">
+                <p class="text-2xl tracking-wide font-medium w-full lg:w-[70%]">Программа полностью соответствует актуальным требованиям к тестировщикам <span class="text-[#4B79F6]">в 2025 году</span>, учитывая современные тренды и технологии в IT-сфере. Она включает изучение передовых инструментов, методологий и подходов, которые будут востребованы на рынке труда. Это позволяет выпускникам быть готовыми к решению сложных задач в области тестирования.</p>
+                <img src="Assets/Images/main/2025.png" alt="" class="w-full md:w-1/2 lg:w-[30%] max-lg:order-first">
+            </div>
+        </div>
+    </main>
+
+    <footer class="w-full bg-white flex flex-col items-center gap-2 text-center p-4 mt-auto">
+        <a href="index.html" class="flex items-center gap-2 transition-all duration-500 hover:rotate-6 hover:scale-110">
+            <!-- Контейнер логотипа -->
+            <div class="w-8 h-8 bg-[#1E90FF] rounded-[8px] flex items-center justify-center">
+                <!-- Лупа -->
+                <div class="w-[20px] h-[20px] border-3 border-[#87CEEB] rounded-full relative 
+                            before:content-[''] before:w-[15px] before:h-[15px] before:bg-white before:rounded-full 
+                            before:absolute before:top-1/2 before:left-1/2 before:-translate-x-1/2 before:-translate-y-1/2 
+                            after:content-[''] after:w-[10px] after:h-[3px] after:bg-black after:absolute 
+                            after:-bottom-1.5 after:-right-1.5 after:rotate-45">
+                </div>
+            </div>
+            <!-- Текст -->
+            <span class="text-lg font-bold">
+                Education<span class="text-[#1E90FF]">Lab</span>
+            </span>
+        </a>
+        <p class="text-base text-gray-500">© 2025 Education. Все права защищены.</p>
+    </footer>
+
+    <script src="https://code.jquery.com/jquery-3.7.1.min.js" integrity="sha256-/JqT3SQfawRcv/BIHPThkBvs0OEvtFFmqPF/lYI/Cxo=" crossorigin="anonymous"></script>
+    <script src="Assets/JS/main.js"></script>
+</body>
+</html>
