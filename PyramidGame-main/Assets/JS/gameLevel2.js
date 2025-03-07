@@ -121,6 +121,7 @@ document.addEventListener('DOMContentLoaded', () => {
         playerBlock.width = newWidth;
         playerBlock.element.style.width = `${newWidth}px`;
         playerBlock.element.dataset.width = newWidth;
+        playerBlock.element.style.backgroundColor = blue;
 
         // Обновляем номер
         const numberElement = playerBlock.element.querySelector('span');
@@ -140,6 +141,7 @@ document.addEventListener('DOMContentLoaded', () => {
         playerBlock.width = newWidth;
         playerBlock.element.style.width = `${newWidth}px`;
         playerBlock.element.dataset.width = newWidth;
+        playerBlock.element.style.backgroundColor = red;
 
         // Обновляем номер
         const numberElement = playerBlock.element.querySelector('span');
